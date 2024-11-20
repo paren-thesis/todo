@@ -1,16 +1,42 @@
-.App {
-  background-color: blueviolet;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+/* Existing styles remain unchanged */
 
-.contain {
-  background-color: white;
-  padding: 10px 20px;
-}
-
-.enter {
+.edit-input {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid #ddd;
   border-radius: 5px;
+  font-size: 16px;
+}
+
+.task-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn {
+  background-color: goldenrod;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-btn:hover {
+  background-color: darkgoldenrod;
+}
+
+.save-btn {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.save-btn:hover {
+  background-color: darkgreen;
 }
