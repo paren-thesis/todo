@@ -5,8 +5,8 @@ import { FaPlus, FaTrash, FaEdit, FaSave } from "react-icons/fa";
 function App() {
   const [tasks, setTasks] = useState([]);
   const [newTask, setNewTask] = useState("");
-  const [editingIndex, setEditingIndex] = useState(null); // Track the index of the task being edited
-  const [editText, setEditText] = useState(""); // Store the text of the task being edited
+  const [editingIndex, setEditingIndex] = useState(null);
+  const [editText, setEditText] = useState("");
 
   const handleAddTask = () => {
     if (newTask.trim() !== "") {
@@ -20,15 +20,15 @@ function App() {
   };
 
   const handleEditTask = (index) => {
-    setEditingIndex(index); // Set the task to edit mode
-    setEditText(tasks[index]); // Pre-fill the input field with the current task text
+    setEditingIndex(index);
+    setEditText(tasks[index]);
   };
 
   const handleSaveTask = (index) => {
     const updatedTasks = [...tasks];
-    updatedTasks[index] = editText.trim(); // Save the updated task text
+    updatedTasks[index] = editText.trim();
     setTasks(updatedTasks);
-    setEditingIndex(null); // Exit edit mode
+    setEditingIndex(null); 
   };
 
   return (
