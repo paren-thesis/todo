@@ -1,5 +1,5 @@
 .App {
-  background-color: blueviolet;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -7,17 +7,21 @@
 }
 
 .contain {
-  background-color: white;
+  background-color: rgb(220, 250, 248);
   padding: 20px 30px;
   border-radius: 10px;
   width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 10px rgb(195, 241, 220);
 }
 
 h2 {
   margin: 0;
   text-align: center;
-  color: blueviolet;
+  color: rgb(255, 255, 255);
+  background-color: rgb(43, 226, 98);
+  border-radius: 15px;
+  padding: 5px;
 }
 
 .inputs {
@@ -30,29 +34,33 @@ h2 {
   flex: 1;
   padding: 8px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 15px;
   font-size: 16px;
   margin-right: 10px;
+  box-shadow: 5px 5px 10px rgb(180, 226, 171);
+  font-weight: 700;
 }
 
 .add-btn {
-  background-color: blueviolet;
+  background-color: rgb(43, 226, 141);
   border: none;
   color: white;
   padding: 8px 12px;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
   font-size: 16px;
+  transition: 0.3s;
 }
 
 .add-btn:hover {
-  background-color: indigo;
+  background-color: rgb(34, 180, 78);
 }
 
 .task-list {
   list-style-type: none;
   padding: 0;
   margin-top: 20px;
+  font-size: 10px;
 }
 
 .task-item {
@@ -63,22 +71,24 @@ h2 {
   padding: 8px 10px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 
 .task-item span {
   flex: 1;
   font-size: 16px;
+  transition: 0.3s
 }
 
 .delete-btn {
   background-color: crimson;
   border: none;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 6px 10px;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
   font-size: 14px;
+  transition: 0.3s;
 }
 
 .delete-btn:hover {
@@ -103,9 +113,10 @@ h2 {
   border: none;
   color: white;
   padding: 6px 10px;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
   font-size: 14px;
+  transition: 0.3s;
 }
 
 .edit-btn:hover {

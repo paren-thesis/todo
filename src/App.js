@@ -39,7 +39,7 @@ function App() {
         <div className="inputs">
           <input
             className="enter"
-            placeholder="Enter task"
+            placeholder="Enter your task"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
           />
