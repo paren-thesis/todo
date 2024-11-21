@@ -11,7 +11,10 @@
   padding: 20px 30px;
   border-radius: 10px;
   width: 300px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+.contain:hover {
   box-shadow: 10px 10px 10px rgb(195, 241, 220);
 }
 
@@ -32,20 +35,24 @@ h2 {
 
 .enter {
   flex: 1;
-  padding: 8px;
+  padding: 12px;
   border: 1px solid #ddd;
   border-radius: 15px;
   font-size: 16px;
   margin-right: 10px;
-  box-shadow: 5px 5px 10px rgb(180, 226, 171);
   font-weight: 700;
+  transition: 0.3s;
+}
+
+.enter:hover {
+  box-shadow: 5px 5px 10px rgb(180, 226, 171);
 }
 
 .add-btn {
   background-color: rgb(43, 226, 141);
   border: none;
   color: white;
-  padding: 8px 12px;
+  padding: 8px 16px;
   border-radius: 30px;
   cursor: pointer;
   font-size: 16px;

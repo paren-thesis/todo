@@ -34,7 +34,7 @@ function App() {
   return (
     <div className="App">
       <div className="contain">
-        <h2>To-Do App</h2>
+        <h2>Bucket List</h2>
         <hr />
         <div className="inputs">
           <input
