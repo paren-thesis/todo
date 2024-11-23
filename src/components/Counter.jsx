@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
 
 const Counter = () => {
+  // The use state
   const [count, setCount] = useState(0);
 
+  /
   const buttonClicked = () =>{
     setCount(count + 1)
   }
